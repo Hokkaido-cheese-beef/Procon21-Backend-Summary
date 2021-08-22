@@ -41,6 +41,7 @@ https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
   "errorMessage": ""
 }
 ```
+
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-Login)
 
 ### 2  /activity/regist
@@ -65,6 +66,8 @@ or
 }
 ```
 ※サーバーエラーの時はステータスコードなどを返します。
+
+
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon2021RegistUserActivity)
 
 ### 3 /activity/end
@@ -72,6 +75,7 @@ or
 - Request
 
 - Response
+
 
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-WorkingTime)
 
