@@ -1,7 +1,6 @@
 # Procon21-Backend-Summary
 
 以前の話し合いのドキュメント
-
 https://docs.google.com/document/d/12Cy2V0xDp_GIkE8NlG-ynWVhyAjLX8ntOmhdAwMk--A/edit?usp=sharing
 
 
