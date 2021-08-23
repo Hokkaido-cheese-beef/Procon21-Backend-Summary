@@ -65,6 +65,7 @@ or
 }
 ```
 ※サーバーエラーの時はステータスコードなどを返します。
+
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon2021RegistUserActivity)
 
 ### 3 /activity/end
