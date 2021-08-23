@@ -1,8 +1,5 @@
 # Procon21-Backend-Summary
 
-[以前の話し合いのドキュメント](https://docs.google.com/document/d/12Cy2V0xDp_GIkE8NlG-ynWVhyAjLX8ntOmhdAwMk--A/edit?usp=sharing)
-
-
 本ドキュメントでは、2021年度「U-22 プログラミングコンテスト」のHCB BackendAPIについてまとめている。
 
 ## URL
@@ -15,7 +12,7 @@ https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
 |2|  /activity/regist  |
 |3|  /activity/end  |
 |4|  /sensor/{deviceID}  |
-|5|  /sensor/data  |
+|5|  /polling/{deviceID}  |
 
 
 ## エンドポイントと担っている処理について
@@ -44,7 +41,6 @@ https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
   "errorMessage": ""
 }
 ```
-
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-Login)
 
 ### 2  /activity/regist
@@ -69,16 +65,25 @@ or
 }
 ```
 ※サーバーエラーの時はステータスコードなどを返します。
-
-
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon2021RegistUserActivity)
 
 ### 3 /activity/end
 - Method：POST
 - Request
+```
+{
+    "userID":"0001",
+    "timestamp":1629629671,
+    "status":1
+}
+```
+```
+{
+  "workingTime": 14700
+}
 
+```
 - Response
-
 
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-WorkingTime)
 
@@ -102,10 +107,18 @@ or
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-CheckSensor)
 
 
-### 5 /sensor/data
+### 5 /polling/{deviceID}
 - Method：GET
-- Request
-
+- Request 
+エンドポイントの/pollingの後にユーザーが入力したdevideIDを指定
 - Response
+```
+{
+  "co2": 732,
+  "temp": 26.74,
+  "hum": 65.89,
+  "message": "汗をかきやすい環境です！\n熱中症に気をつけましょう！"
+}
+```
 
 [エンドポイントの詳細について]()
