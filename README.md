@@ -23,7 +23,7 @@ https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
 |2|  /activity/regist  |
 |3|  /activity/end  |
 |4|  /sensor/{deviceID}  |
-|5|  /polling/{deviceID}  |
+|5|  /activity/polling/{deviceID}  |
 
 
 ## エンドポイントと担っている処理について
@@ -33,7 +33,7 @@ https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
 |2|  /activity/regist  |  作業開始、休憩開始・終了時間の記録  |
 |3|  /activity/end  |  作業終了時間の記録、作業開始時間から経過した時間の算出  |
 |4|  /sensor/{deviceID}  | 　作業開始前のデバイス選択時にデバイスの動作を確認  |
-|5| /sensor/data  |  作業時にデバイスから取得したデータを送る  |
+|5| /activity/sensor/data  |  作業時にデバイスから取得したデータを送る  |
 
 ## エンドポイントのリクエストとレスポンス
 ### 1 /login
@@ -119,7 +119,7 @@ or
 [エンドポイントの詳細について](https://github.com/Hokkaido-cheese-beef/Procon21-Backend-CheckSensor)
 
 
-### 5 /polling/{deviceID}
+### 5 /activity/polling/{deviceID}
 - Method：GET
 - Request 
 エンドポイントの/pollingの後にユーザーが入力したdevideIDを指定
