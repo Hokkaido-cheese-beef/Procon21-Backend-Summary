@@ -5,6 +5,17 @@
 ## URL
 https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
 
+## DevideID
+- 000001
+
+## activity State
+|   ID  | 動作  |
+| ---- | ---- |
+|1|  作業開始  | 
+|2|  休憩開始  |
+|3|  休憩終了 |
+|4|  作業終了  |
+
 ## エンドポイント一覧
 |   ID  |エンドポイント  |
 | ---- | ---- |
