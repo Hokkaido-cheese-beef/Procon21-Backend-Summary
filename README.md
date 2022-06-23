@@ -2,8 +2,6 @@
 
 本ドキュメントでは、2021年度「U-22 プログラミングコンテスト」のHCB BackendAPIについてまとめている。
 
-## URL
-https://yz05f6od8e.execute-api.ap-northeast-1.amazonaws.com/procon/
 
 ## DevideID
 - 000001
